@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- https://www.youtube.com/watch?v=PY_4QPg2niM&list=PLPl81lqbj-4J_AQ3YYnzusbt7FpeL2oea&index=4 -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h1 id="titulo1">Queridas funciones</h1>
+      <button id="button" onclick="alert('Hola')">
+        Haz click y ve mi poder
+      </button>
+      <button
+        id="button"
+        onclick=' document.getElementById("titulo").innerHTML = nombre + " " + apellido;'
+      >
+        Haz click y ve mi poder2
+      </button>
+
+      <button
+        id="button"
+        onclick=' document.getElementById("titulo").innerHTML = nombre + " " + apellido;'
+      >
+        Haz click y ve mi poder3
+      </button>
+
+      <p id="demo">click me</p>
+    </div>
+
+    <script>
+      var nombre = "Ignacio";
+      // document.getElementById("titulo").innerHTML = nombre + " " + apellido;
+
+      //   function suma(numero) {
+      //     //aqui se escribe una sentencia con alguna tarea o cálculo
+
+      //     return numero + numero;
+      //   }
+      function suma(numero1, numero2) {
+        //aqui se escribe una sentencia con alguna tarea o cálculo
+
+        return numero1 + numero2;
+      }
+      //ejecutar funcion
+      //   suma(7);
+      var x = 7;
+      var y = 3;
+      //   document.getElementById("titulo1").innerHTML = suma(7, 3); //sustituir contenido del h1 con el resultado de la historia
+      document.getElementById("titulo1").innerHTML = suma(x, y);
+
+      document.getElementById("demo").onclick = function () {
+        myfunction();
+      };
+      function myFuntion() {
+        document.getElementById("demo").innerHTML = "you click me";
+      }
+    </script>
+
+    <!-- <script src="nombre-inventado.js"></script> -->
+  </body>
+</html>

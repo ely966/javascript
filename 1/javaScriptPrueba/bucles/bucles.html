@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- https://www.youtube.com/watch?v=PY_4QPg2niM&list=PLPl81lqbj-4J_AQ3YYnzusbt7FpeL2oea&index=4 -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <style>
+     
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2 id="titulo" class="display-4">Array</h2>
+      <div
+        class="progress"
+        role="progressbar"
+        aria-label="Success striped example"
+        aria-valuenow="25"
+        aria-valuemin="0"
+        aria-valuemax="100"
+      >
+      
+      <input type="text" class="form-control my-3" placeholder="ingresa tu color">
+
+      <button id="boton">For</button>
+      <p>Lorem ipsum</p>
+      <p>Lorem ipsum</p>
+      <p>Lorem ipsum</p>
+    </div>
+
+    <script>
+// var colores=['azules', "verde", "rojo"];
+// alert(colores[0])
+// var parrafos = document.querySelectorAll("p");//todos los parrafos
+var parrafos = document.querySelectorAll("p");//todos los parrafos
+// for(let cambio of parrafos) {
+//     cambio.classList.add("text-danger");
+// }
+for(i=0; i<  parrafos.length; i++) {
+    // cambio.classList.add("text-danger");
+    parrafos[i].classList.add("text-danger");
+}
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- <script src="nombre-inventado.js"></script> -->
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- https://www.youtube.com/watch?v=PY_4QPg2niM&list=PLPl81lqbj-4J_AQ3YYnzusbt7FpeL2oea&index=4 -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h1 id="titulo1">Queridas funciones</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+
+    <script>
+      function Perro(nombre, edad, vivo) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.vivo = vivo;
+      }
+
+      var perro1 = new Perro("rex", 5, true);
+      var perro2 = new Perro("tomy", 3, false);
+
+      var animal = [perro1, perro2];
+
+      var gatos = [
+        { nombre: "felix", edad: 5 },
+        {
+          nombre: "tomi",
+          edad: 3,
+        },
+      ];
+      //   var perro = {
+      //     nombre: "rex",
+      //     edad: 5,
+      //     vivo: true,
+      //   };
+      //   var perro1 = {
+      //     nombre: "max",
+      //     edad: 3,
+      //     vivo: false,
+      //   };
+      //   console.log(perro.nombre);
+      //
+    </script>
+
+    <!-- <script src="nombre-inventado.js"></script> -->
+  </body>
+</html>

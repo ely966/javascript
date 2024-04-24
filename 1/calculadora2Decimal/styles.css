@@ -1,0 +1,69 @@
+.general-calculadora {
+  text-align: center;
+  border: 1px solid rgb(152, 230, 93);
+  background-color: rgb(102, 200, 245);
+  border-radius: 15px;
+  overflow: hidden;
+  width: 400px;
+  text-align: center;
+  justify-content: center;
+  margin: 0px auto;
+  background-color: rgb(176, 217, 228);
+}
+.calculator {
+  display: flex;
+
+  /* border: 1px solid rgb(152, 230, 93);
+  background-color: rgb(102, 200, 245); */
+
+  /* border-radius: 15px;
+  overflow: hidden; */
+  /* width: 400px;*/
+}
+
+/*Parte de la calculadora: conjunto de numeros*/
+
+.calculators-numbers {
+  /* background-color: rgb(176, 217, 228); */
+  /* border: 1px solid green;
+  border-radius: 15px;
+  overflow: hidden; */
+  margin-right: 10px;
+}
+
+/*Cada tecla de numero de la calculadora*/
+
+.number {
+  width: 30%;
+  margin: 3px;
+  border: 1 px solid rgb(166, 237, 209);
+  border-radius: 15px;
+  overflow: hidden;
+}
+.number:hover {
+  background-color: aquamarine;
+
+  cursor: pointer;
+}
+
+/*Conjunto de operaciones de la calculadora*/
+
+.operadores {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  padding: 2px;
+}
+
+.result {
+  justify-content: center;
+  margin: 10px;
+
+  border: 1px solid rgb(152, 230, 93);
+  background-color: rgb(204, 250, 190);
+  border-radius: 15px;
+  overflow: hidden;
+
+  margin-bottom: 30px;
+}

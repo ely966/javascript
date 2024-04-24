@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+  </head>
+  <body>
+    <main>
+      <section class="general-calculadora">
+        <!--Mostrar el reusltado-->
+        <div class="result">
+          <p id="showScreen">-</p>
+          <p id="resultado">Mostrar resultado</p>
+        </div>
+        <!--CALCULADORA-->
+        <div class="calculator">
+          <div class="calculators-numbers">
+            <button class="number" onclick="checkValueToVar(1)">1</button>
+            <button class="number" onclick="checkValueToVar(2)">2</button>
+            <button class="number" onclick="checkValueToVar(3)">3</button>
+            <button class="number" onclick="checkValueToVar(4)">4</button>
+            <button class="number" onclick="checkValueToVar(5)">5</button>
+            <button class="number" onclick="checkValueToVar(6)">6</button>
+            <button class="number" onclick="checkValueToVar(7)">7</button>
+            <button class="number" onclick="checkValueToVar(8)">8</button>
+            <button class="number" onclick="checkValueToVar(9)">9</button>
+            <button class="number">--</button>
+            <button class="number" onclick="checkValueToVar(0)">0</button>
+            <button class="number">.</button>
+          </div>
+          <div class="operadores">
+            <!-- <button onclick="operations(1,'x', 2)">+</button> -->
+            <!-- <button onclick="operations(1.5,'+', 1.5)">+prueba</button> -->
+            <button onclick="checkOperation('+')">+</button>
+            <button onclick="checkOperation('-')">-</button>
+            <button onclick="checkOperation('x')">x</button>
+            <button onclick="checkOperation('/')">/</button>
+            <button onclick="checkOperation('%')">%</button>
+            <button onclick="clearAllValues()">AC</button>
+            <button onclick="operations()">=</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="calculadora.js"></script>
+  </body>
+</html>
